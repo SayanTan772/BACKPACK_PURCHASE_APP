@@ -1,0 +1,580 @@
+.main {
+  width:100vw;
+  overflow-x:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.nav {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+  width:100%;
+  height:94px;
+  background-color:#00000038;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.home {
+  width:100%;
+  height:725px;
+  background:url('/home.webp');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.h1 {
+  font-size:68px;
+  color:#ffff;
+  font-weight:700;
+}
+
+.btn {
+  width:180px;
+  height:50px;
+  background:transparent;
+  border:0.45px solid #ffff;
+  color:#ffff;
+  font-size:16px;
+  margin:38px 0px;
+  transition:all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color:#ffff;
+  color:#000;
+  border:none;
+}
+
+.name {
+  font-size:32px;
+  font-weight:700;
+  color:#fffffff1;
+}
+
+.fade {
+  color:#ffffff79;
+}
+
+.link {
+  float:left;
+  color:#ffffffb2;
+  font-weight:400;
+  margin:0px 16px;
+  transition:all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color:#fffffff3;
+  transform:translateY(-3px);
+}
+
+.login {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fffffff3;
+  font-size:16px;
+}
+
+.user {
+  margin-right:12px;
+}
+
+.bag {
+  margin-left:12px;
+}
+
+.socials {
+  position:fixed;
+  top:50%;
+  transform:translateY(-50%);
+  right:0;
+  z-index:999;
+  width:55px;
+  height:165px;
+  background-color:#000000ae;
+}
+
+.icon {
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+}
+
+.section {
+  width:100%;
+  height:650px;
+  display:flex;
+}
+
+.left {
+  width:50%;
+  height:100%;
+  background-color:#000;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.right {
+  width:50%;
+  height:100%;
+  background:url('/bag_right.webp');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.gallery {
+  width:100%;
+  height:549px;
+  display:flex;
+}
+
+.gallery_img {
+  width:33.333%;
+  height:100%;
+  overflow:hidden;
+}
+
+.img1 {
+  position:relative;
+  width:100%;
+  height:100%;
+  background:url('/man1.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  transition:all 0.3s ease-in-out;
+}
+
+.gallery_img:hover .img1 {
+  transform:scale(1.2);
+}
+
+.img2 {
+  position:relative;
+  width:100%;
+  height:100%;
+  background:url('/travel.webp');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  transition:all 0.3s ease-in-out;
+}
+
+.gallery_img:hover .img2 {
+  transform:scale(1.2);
+}
+
+.img3 {
+  position:relative;
+  width:100%;
+  height:100%;
+  background:url('/photo.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  transition:all 0.3s ease-in-out;
+}
+
+.gallery_img:hover .img3 {
+  transform:scale(1.2);
+}
+
+.overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:#0000007c;
+  display:none;
+  place-items:center;
+  color:#ffffffd0;
+  font-size:28px;
+  font-weight:400;
+  transition:all 0.3s ease-in-out;
+}
+
+.img1:hover .overlay {
+  display:grid;
+}
+
+.img2:hover .overlay {
+  display:grid;
+}
+
+.img3:hover .overlay {
+  display:grid;
+}
+
+.products {
+  width:100%;
+  height:760px;
+  background-color:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.section_h1 {
+  font-size:44px;
+}
+
+.discount {
+  font-size:24px;
+  font-weight:600;
+  color:#ffff;
+  margin:20px 0px;
+}
+
+.container {
+  width:70%;
+  height:540px;
+  margin:16px 0px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.product_card {
+  width:335px;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin:0px 17px;
+  /* background-color:blueviolet; */
+}
+
+.bags {
+  object-fit:cover;
+  object-position:center;
+}
+
+.title {
+  font-size:28px;
+  font-weight:600;
+  color:rgb(162,156,156);
+  margin:14px 0px;
+}
+
+.price {
+  width:145px;
+  font-size:16px;
+  font-weight:500;
+  display:flex;
+  justify-content:space-between;
+  color:rgba(162, 156, 156, 0.862);
+  margin:16px 0px;
+}
+
+.strike  {
+  text-decoration:line-through;
+}
+
+.about {
+  width:100%;
+  height:600px;
+  background:url('/photo.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.about_us {
+  width:50%;
+  height:100%;
+  background-color:rgba(0,0,0,0.75);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.para {
+  width:48%;
+  font-size:18px;
+  font-weight:400;
+  color:#ffffffde;
+  margin:20px 0px;
+  line-height:28px;
+}
+
+.mailus {
+  width:100%;
+  height:480px;
+  background-color:rgb(38,38,38);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.label {
+  font-size:18px;
+  font-weight:400;
+  color:#ffff;
+  margin-top:54px;
+}
+
+.input {
+  width:500px;
+  height:45px;
+  background:transparent;
+  border-bottom:0.6px solid #ffff;
+  padding-left:14px;
+  color:#ffff;
+  font-size:16px;
+  margin:14px 0px 24px 0px;
+}
+
+.submit {
+  width:500px;
+  height:45px;
+  background:transparent;
+  border:0.6px solid #ffff;
+  padding-left:14px;
+  color:#ffff;
+  font-size:16px;
+  transition:all 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background-color:#ffff;
+  border:none;
+  color:#000;
+}
+
+.footer {
+  width:100%;
+  height:90px;
+  background-color:#000;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  color:rgb(162,156,156);
+}
+
+.footer_li {
+  float:left;
+  margin:0px 14px;
+  font-size:18px;
+}
+
+.copyright {
+  font-size:18px;
+}
+
+.menu {
+  display:none;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+  .nav_links {
+    display:none;
+  }
+
+  .home {
+    height:760px;
+  }
+
+  .h1 {
+    text-align:center;
+  }
+
+  .container {
+    width:100%;
+    overflow:hidden;
+  }
+
+  .product_card {
+    width:235px;
+    margin:0px;
+  }
+
+  .bags {
+    width:235px;
+  }
+
+  .title {
+    text-align:center;
+  }
+
+  .about_h1 {
+    font-size:42px;
+  }
+
+  .para {
+    width:56%;
+  }
+
+  .footer {
+    flex-direction:column;
+    height:auto;
+    padding:24px 0px;
+    justify-content:center;
+  }
+
+  .copyright {
+    margin-bottom:16px;
+  }
+
+  .footer_li {
+    float:none;
+    text-align:center;
+    margin:12px 0px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .nav {
+    height:64px;
+  }
+
+  .name {
+    font-size:22px;
+  }
+
+  .nav_links {
+    display:none;
+  }
+
+  .login {
+    display:none;
+  }
+
+  .h1 {
+    font-size:38px;
+    text-align:center;
+  }
+
+  .home {
+    height:500px;
+  }
+
+  .section {
+    flex-direction:column;
+    height:620px;
+  }
+
+  .left {
+    width:100%;
+    height:50%;
+  }
+
+  .right {
+    width:100%;
+    height:50%;
+  }
+
+  .gallery {
+    flex-direction:column;
+    height:auto;
+  }
+
+  .gallery_img {
+    width:100%;
+    height:390px;
+  }
+
+  .products {
+    height:auto;
+    padding:34px 0px;
+  }
+
+  .container {
+    height:auto;
+    flex-wrap:wrap;
+  }
+
+  .about_us {
+    width:100%;
+    background-color:rgba(0,0,0,0.45);
+  }
+
+  .about_h1 {
+    width:100%;
+  }
+
+  .para {
+    width:65%;
+    text-align:center;
+  }
+
+  .socials {
+    display:none;
+  }
+
+  .input, .submit {
+    width:90%;
+  }
+
+  .footer {
+    height:auto;
+    padding:28px 0px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .copyright {
+    margin:16px 0px;
+    text-align:center;
+  }
+
+  .footer_li {
+    float:none;
+    text-align:center;
+    margin:12px 0px;
+  }
+
+  .menu {
+    display:block;
+  }
+
+  .dropdown {
+    width:100%;
+    height:100%;
+    transition:all 0.5s ease-in-out;
+    background-color:rgb(38,38,38);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    justify-content:center;
+    align-items:center;
+    color:rgb(162,156,156);
+  }
+
+  .cross {
+    position:absolute;
+    top:25px;
+    right:25px;
+  }
+
+  .li {
+    font-size:24px;
+    margin:24px 0px;
+  }
+
+}
